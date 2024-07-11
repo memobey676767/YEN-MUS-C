@@ -42,20 +42,20 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.mamaklibirininruhu")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/mamaklimekani")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/kumsaldestekkanal")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/kumsalmuzikk")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
-AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
+AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", True))
 
 
 # Get this credentials from https://developer.spotify.com/dashboard
-SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None)
-SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None)
+SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "1c21247d714244ddbb09925dac565aed")
+SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "709e1a2969664491b58200860623ef19")
 
 
 # Maximum limit for fetching playlist's track from youtube, spotify, apple links.
-PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", 25))
+PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", 30))
 
 
 # Telegram audio and video file size limit (in bytes)
@@ -66,8 +66,8 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 3221225472))
 
 # Get your pyrogram v2 session from @StringFatherBot on Telegram
 STRING1 = getenv("STRING_SESSION", None)
-STRING2 = getenv("STRING_SESSION2", None)
-STRING3 = getenv("STRING_SESSION3", None)
+STRING2 = getenv("STRING_SESSION2", "AgFipAAAeF5c00wqZp-rK8xg8A104yygUVgUydB52A5K0yipOfL8_jFLdbsA_hvf97jibOaNdJQ5Lp5g1mwvNDf_lpiLv8ITQskHE2JVIWOYE8fSm8n4PDQ9HzfGC28CZQTbhuVyy2625qfzAqDGW4p83pYNvq_VZo9szrPmMWIYnMyGCm5BYfW3zvgs596C7Gmeh_-VY6IBTdoqwQnPck6uZ2iPBc-hFufeY2gMUIw7CKC4sHpttHk-bjJphFyQ0CVNHBVbN7PN8Wsm8qAuQY-ZM_jKepvtQaTONeFS1pzd4AloPpClb_NGxAdoaUVLU8ZCOKoBswSW4ctezMfW9aN6mdOXUwAAAAG8nzf6AA")
+STRING3 = getenv("STRING_SESSION3", "BAHHpwsAaJEVH7AhUy5uEYebqhAjdsLzpAB-t5w3aLBTI4B9zOjs2hvMTY42inb3ClJZaCzljYXOXLPKBpKR8Mk1RGa7qwgapNSS5X2bdWhcG9SQ70LRVtTtpgn3lJpGRPN3agfs7qpLX7i2lb9_vHDs9F0uMmSkxen0dr0OkRYpz104vCLzCgo38c72EwvAcyLgVZBYNIh96pm3jIfbzR8hJs12SO05pFXYoyW9kaAakt9F3XQSfsbcwazri-kuj2VKxxVxnHydxMdHe_KwiBwD-VaoYASe_U0-S3M1nlXj8X07fWFViboUs61m8-BFXS7X3k73f8bMg_NIEheNGpXfwub9KgAAAAG3uweMAA")
 STRING4 = getenv("STRING_SESSION4", None)
 STRING5 = getenv("STRING_SESSION5", None)
 
@@ -84,21 +84,22 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://telegra.ph/Yeni-11-29"
+   "START_IMG_URL", "https://telegra.ph/Jww-06-18"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://telegra.ph/Yeni-11-29"
+    "PING_IMG_URL", "https://telegra.ph/Jww-06-18"
 )
-PLAYLIST_IMG_URL = "https://telegra.ph/Eski-11-29"
-STATS_IMG_URL = "https://telegra.ph/Eski-11-29"
-TELEGRAM_AUDIO_URL = "https://telegra.ph/Eski-11-29"
-TELEGRAM_VIDEO_URL = "https://telegra.ph/Eski-11-29"
-STREAM_IMG_URL = "https://telegra.ph/Eski-11-29"
-SOUNCLOUD_IMG_URL = "https://telegra.ph/Eski-11-29"
-YOUTUBE_IMG_URL = "https://telegra.ph/Eski-11-29"
-SPOTIFY_ARTIST_IMG_URL = "https://telegra.ph/Eski-11-29"
-SPOTIFY_ALBUM_IMG_URL = "https://telegra.ph/Eski-11-29"
-SPOTIFY_PLAYLIST_IMG_URL = "https://telegra.ph/Eski-11-29"
+PLAYLIST_IMG_URL = "https://telegra.ph/Jww-06-18"
+STATS_IMG_URL = "https://telegra.ph/Jww-06-18"
+TELEGRAM_AUDIO_URL = "https://telegra.ph/Jww-06-18"
+TELEGRAM_VIDEO_URL = "https://graph.org/file/6c6cce625f4a721569703.jpg"
+STREAM_IMG_URL = "https://graph.org/file/6c6cce625f4a721569703.jpg"
+SOUNCLOUD_IMG_URL = "https://graph.org/file/6c6cce625f4a721569703.jpg"
+YOUTUBE_IMG_URL = "https://graph.org/file/6c6cce625f4a721569703.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://graph.org/file/6c6cce625f4a721569703.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://graph.org/file/6c6cce625f4a721569703.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://graph.org/file/6c6cce625f4a721569703.jpg"
+
 
 
 def time_to_seconds(time):
@@ -122,4 +123,4 @@ if SUPPORT_CHAT:
     if not re.match("(?:http|https)://", SUPPORT_CHAT):
         raise SystemExit(
             "[ERROR] - Your SUPPORT_CHAT url is wrong. Please ensure that it starts with https://"
-        )
+)
